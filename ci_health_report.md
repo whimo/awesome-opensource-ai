@@ -1,23 +1,23 @@
-# OSAI CI Health Report - 2026-05-07
+# OSAI CI Health Report - 2026-05-08
 
 ## Summary
 
 **Status:** ✅ CI PASSING
 
-**Run Date:** May 7, 2026 at 02:02 UTC (Europe/Amsterdam)
+**Run Date:** May 8, 2026 at 18:02 UTC (Europe/Amsterdam)
 **Repository:** alvinreal/awesome-opensource-ai (main branch)
+**Latest Run ID:** 25549836577
 
 ## CI Status Check
 
 **Latest GitHub Actions Push Runs (main branch):**
 | Run # | Status | Commit | Time |
 |-------|--------|--------|------|
-| 738 | ✅ success | Add MLE-bench and WebArena to Evaluation | 2026-05-06 15:25 UTC |
-| 737 | ✅ success | Add Uni-CLI to EMERGING > Developer Tools | 2026-05-06 14:28 UTC |
-| 736 | ✅ success | Add 5 elite-tier AI agent frameworks | 2026-05-06 14:23 UTC |
-| 735 | ✅ success | Add Vector Databases: Annoy, JVector, VectorDBBench | 2026-05-06 14:22 UTC |
+| 25549836577 | ✅ success | b9c13bd | 2026-05-08 10:09 UTC |
+| 25547613723 | ❌ failure | 8f5a873 | 2026-05-08 09:18 UTC |
+| 25545208297 | ✅ success | d3a74f3 | 2026-05-08 08:21 UTC |
 
-**Note:** Run 739 shows `action_required` but this was a PR event from a fork (mfold111/awesome-opensource-ai), not a main branch failure. All push events to main are passing.
+**Note:** The failure at 09:18 UTC was resolved by the subsequent passing run at 10:09 UTC.
 
 ## Validation Results (Current)
 ```
@@ -30,15 +30,28 @@ ok
 Summary: 0 error(s), 0 warning(s)
 ```
 
-## Previous Issues Fixed (May 6, 2026)
+## Recent Auto-Fixes Applied (May 8, 2026)
 
-Earlier runs removed 6 stale entries:
+**Batch 8 (Run 25544538815):** 4 stale repos removed
+- deepseek-ai/deepseek-vl2 (stale 435 days)
+- moonshotai/kimi-vl (stale 296 days)
+- bytedance-seed/seed1.5-vl (stale 327 days)
+- modelscope/clearervoice-studio (stale 266 days)
+
+**Earlier Batch (Run 25547613723):** 2 repos removed
+- pinecone-io/canopy (stale 541 days, archived)
+- truefoundry/cognita (archived)
+
+## Previous Issues Fixed (May 6-7, 2026)
+
+Earlier runs removed 7 stale entries:
 - haotian-liu/LLaVA (stale 631 days)
 - deepseek-ai/Janus (stale 458 days)
 - VITA-MLLM/VITA (stale 403 days)
 - gpt-omni/mini-omni (stale 546 days)
 - RainBowLuoCS/OpenOmni (low stars: 139 < 1000)
 - open-mmlab/mmpretrain (stale 550 days)
+- protectai/rebuff (stale 636 days, archived)
 
 ## Current List Health
 
@@ -55,11 +68,12 @@ No actions required - CI is passing with 0 errors and 0 warnings.
 
 ## Summary Stats
 
-- **Total entries processed:** 0 (no fixes needed)
-- **Stale repos removed:** 0
-- **Archived repos removed:** 0
-- **Duplicates removed:** 0
+- **Total entries processed today:** 0 (no fixes needed)
+- **Stale repos removed today:** 0
+- **Archived repos removed today:** 0
+- **Duplicates removed today:** 0
 - **Max entries per run limit:** 5 (not reached - 0 fixes needed)
+- **Total entries removed this cycle:** 13
 
 ## Notes
 
@@ -68,3 +82,4 @@ No actions required - CI is passing with 0 errors and 0 warnings.
 - All repos are active within the 183-day threshold
 - No archived or disabled repositories detected
 - Main branch is healthy and accepting new contributions
+- Node.js 20 deprecation warning present (non-blocking)
