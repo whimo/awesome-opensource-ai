@@ -1190,7 +1190,6 @@
 - **[Refact](https://github.com/smallcloudai/refact)** ![GitHub stars](https://img.shields.io/github/stars/smallcloudai/refact?style=social) - Open-source AI code assistant with autocomplete, chat, and refactoring. Self-hostable with support for multiple LLM providers. BSD-3-Clause licensed.
 - **[Qwen Code](https://github.com/QwenLM/qwen-code)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/qwen-code?style=social) - Open-source AI agent for the terminal, optimized for Qwen series models. Multi-protocol provider support including OpenAI, Anthropic, Gemini, Alibaba Cloud, OpenRouter. Features agentic workflow with Skills and SubAgents. Apache 2.0 licensed.
 - **[DeepCode](https://github.com/HKUDS/DeepCode)** ![GitHub stars](https://img.shields.io/github/stars/HKUDS/DeepCode?style=social) - Transforms research papers and natural language into production-ready code. AI-powered research-to-code automation tool. MIT licensed.
-- **[Plandex](https://github.com/plandex-ai/plandex)** ![GitHub stars](https://img.shields.io/github/stars/plandex-ai/plandex?style=social) - Open source AI coding agent designed for large projects and real-world tasks. Terminal-based with support for complex multi-file changes and planning. MIT licensed.
 
 #### Notebooks & Interactive Computing
 
