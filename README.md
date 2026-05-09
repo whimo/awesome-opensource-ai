@@ -368,7 +368,6 @@
 - **[xLLM](https://github.com/jd-opensource/xllm)** ![GitHub stars](https://img.shields.io/github/stars/jd-opensource/xllm?style=social) - High-performance inference engine optimized for Chinese AI accelerators (Cambricon MLU, Hygon DCU, Huawei Ascend). Features service-engine decoupled architecture with elastic scheduling, PD disaggregation, and global KV cache management. Powers JD.com's core retail businesses. Apache 2.0 licensed.
 - **[Mooncake](https://github.com/kvcache-ai/Mooncake)** ![GitHub stars](https://img.shields.io/github/stars/kvcache-ai/Mooncake?style=social) - Production-grade serving platform for Kimi (Moonshot AI). Features distributed KV cache pool with intelligent offloading, prefill/decode disaggregation, and cross-instance KV reuse. Integrated with vLLM, SGLang, and TensorRT-LLM. Apache 2.0 licensed.
 - **[gemma.cpp](https://github.com/google/gemma.cpp)** ![GitHub stars](https://img.shields.io/github/stars/google/gemma.cpp?style=social) - Lightweight, standalone C++ inference engine for Google's Gemma models. Optimized for on-device deployment with minimal dependencies and efficient memory usage. Apache 2.0 licensed.
-- **[Tengine](https://github.com/OAID/Tengine)** ![GitHub stars](https://img.shields.io/github/stars/OAID/Tengine?style=social) - Lite, high-performance, modular inference engine for embedded devices. Supports ARM CPU, GPU, and NPU with optimized kernels for edge AI deployment. Apache 2.0 licensed.
 
 #### Quantization, Distillation & Optimization
 

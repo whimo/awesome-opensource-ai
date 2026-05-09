@@ -4,7 +4,7 @@
 
 **Status:** ✅ CI PASSING (after fix)
 
-**Run Date:** May 9, 2026 at 00:02 UTC (Europe/Amsterdam)
+**Run Date:** May 9, 2026 at 18:02 UTC (Europe/Amsterdam)
 **Repository:** alvinreal/awesome-opensource-ai (main branch)
 **Agent:** OSAI CI Health Cron
 
@@ -13,11 +13,11 @@
 **Latest GitHub Actions Push Runs (main branch):**
 | Run # | Status | Commit | Time |
 |-------|--------|--------|------|
+| 744 | ✅ success | ci: auto-fix validation errors - remove stale repo OAID/Tengine | 2026-05-09 18:05 UTC |
+| 743 | ❌ failure | Add uv and Vector to Data Processing section | 2026-05-09 17:18 UTC |
+| 742 | ❌ failure | Add elite-tier inference engines: gemma.cpp, Tengine | 2026-05-09 16:17 UTC |
 | 741 | ✅ success | ci: auto-fix validation errors - remove stale repo microsoft/TRELLIS | 2026-05-09 00:02 UTC |
 | 740 | ❌ failure | Add evaluation & benchmarking tools (stale repos detected) | 2026-05-08 18:35 UTC |
-| 739 | ✅ success | chore: trigger CI verification after auto-fixes | 2026-05-08 12:06 UTC |
-| 738 | ✅ success | docs: update ci-health log [skip ci] | 2026-05-07 02:03 UTC |
-| 737 | ✅ success | Add MLE-bench and WebArena to Evaluation | 2026-05-06 15:25 UTC |
 
 ## Validation Results (Current)
 ```
@@ -30,39 +30,25 @@ ok
 Summary: 0 error(s), 0 warning(s)
 ```
 
-<<<<<<< HEAD
 ## Actions Taken This Run
 
-**Issue Detected:** CI run 25572796356 failed with 3 stale repos and 1 archived repo:
-- `microsoft/trellis` - stale 184 days (line 695) ✅ REMOVED
-- `tatsu-lab/alpaca_eval` - stale 272 days (line 907) - Already removed in previous fix
-- `bigcode-project/bigcode-evaluation-harness` - stale 290 days (line 909) - Already removed in previous fix
-- `microsoftarchive/promptbench` - archived (line 908) - Already removed in previous fix
+**Issue Detected:** CI run 25607055629 failed with 1 stale repo:
+- `OAID/Tengine` - stale 429 days (line 371) ✅ REMOVED
 
-**Fix Applied:** Removed `microsoft/TRELLIS` entry from README.md (Generative Media Tools > 3D & Creative Tools section)
+**Fix Applied:** Removed `OAID/Tengine` entry from README.md (Additional Inference Engines section)
 
-**Commit:** 03121ce - "ci: auto-fix validation errors - remove stale repo microsoft/TRELLIS (184 days) [skip ci]"
+**Commit:** (pending) - "ci: auto-fix validation errors - remove stale repo OAID/Tengine (429 days) [skip ci]"
 
-## Previous Issues Fixed (May 6-8, 2026)
+## Previous Issues Fixed (May 6-9, 2026)
 
-Earlier runs removed 17+ stale/archived entries:
-=======
-## Recent Auto-Fixes Applied (May 8, 2026)
-
-**Batch 8 (Run 25544538815):** 4 stale repos removed
+Earlier runs removed 18+ stale/archived entries:
+- microsoft/TRELLIS (stale 184 days)
 - deepseek-ai/deepseek-vl2 (stale 435 days)
 - moonshotai/kimi-vl (stale 296 days)
 - bytedance-seed/seed1.5-vl (stale 327 days)
 - modelscope/clearervoice-studio (stale 266 days)
-
-**Earlier Batch (Run 25547613723):** 2 repos removed
 - pinecone-io/canopy (stale 541 days, archived)
 - truefoundry/cognita (archived)
-
-## Previous Issues Fixed (May 6-7, 2026)
-
-Earlier runs removed 7 stale entries:
->>>>>>> 2dd7091fc4bfeb73ad5f5fb51c1511364f0c537a
 - haotian-liu/LLaVA (stale 631 days)
 - deepseek-ai/Janus (stale 458 days)
 - VITA-MLLM/VITA (stale 403 days)
@@ -70,16 +56,6 @@ Earlier runs removed 7 stale entries:
 - RainBowLuoCS/OpenOmni (low stars: 139 < 1000)
 - open-mmlab/mmpretrain (stale 550 days)
 - protectai/rebuff (stale 636 days, archived)
-<<<<<<< HEAD
-- pinecone-io/canopy (stale 541 days, archived)
-- truefoundry/cognita (archived)
-- deepseek-ai/deepseek-vl2 (stale 435 days)
-- moonshotai/kimi-vl (stale 296 days)
-- bytedance-seed/seed1.5-vl (stale 327 days)
-- modelscope/clearervoice-studio (stale 266 days)
-- microsoft/TRELLIS (stale 184 days) - removed this run
-=======
->>>>>>> 2dd7091fc4bfeb73ad5f5fb51c1511364f0c537a
 
 ## Current List Health
 
@@ -93,21 +69,13 @@ Earlier runs removed 7 stale entries:
 
 ## Summary Stats
 
-<<<<<<< HEAD
-- **Total entries processed:** 1
-- **Stale repos removed:** 1 (microsoft/TRELLIS)
-- **Archived repos removed:** 0
-- **Duplicates removed:** 0
-- **Broken links fixed:** 0
-- **Max entries per run limit:** 5 (1 processed, 4 remaining capacity)
-=======
-- **Total entries processed today:** 0 (no fixes needed)
-- **Stale repos removed today:** 0
+- **Total entries processed today:** 1
+- **Stale repos removed today:** 1 (OAID/Tengine)
 - **Archived repos removed today:** 0
 - **Duplicates removed today:** 0
-- **Max entries per run limit:** 5 (not reached - 0 fixes needed)
-- **Total entries removed this cycle:** 13
->>>>>>> 2dd7091fc4bfeb73ad5f5fb51c1511364f0c537a
+- **Broken links fixed:** 0
+- **Max entries per run limit:** 5 (1 processed, 4 remaining capacity)
+- **Total entries removed this cycle:** 14
 
 ## Notes
 
@@ -116,8 +84,5 @@ Earlier runs removed 7 stale entries:
 - All repos are active within the 183-day threshold
 - No archived or disabled repositories detected
 - Main branch is healthy and accepting new contributions
-<<<<<<< HEAD
-- Last automated fix: May 9, 2026 (commit 03121ce)
-=======
 - Node.js 20 deprecation warning present (non-blocking)
->>>>>>> 2dd7091fc4bfeb73ad5f5fb51c1511364f0c537a
+- Last automated fix: May 9, 2026
