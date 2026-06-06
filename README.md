@@ -22,7 +22,7 @@ Curated open-source artificial intelligence models, libraries, infrastructure, a
 ## Contents
 
 - [1. Core Frameworks & Libraries](#1-core-frameworks--libraries)
-- [2. Open Foundation Models](#2-open-foundation-models)
+- [2. Model Codebases & Model Families](#2-model-codebases--model-families)
 - [3. Inference Engines & Serving](#3-inference-engines--serving)
 - [4. Agentic AI & Multi-Agent Systems](#4-agentic-ai--multi-agent-systems)
 - [5. Retrieval-Augmented Generation (RAG) & Knowledge](#5-retrieval-augmented-generation-rag--knowledge)
@@ -214,85 +214,42 @@ Good entries should have a clear reason to exist. They should help people build,
 
 ---
 
-## 2. Open Foundation Models
+## 2. Model Codebases & Model Families
 
-> Pretrained language, multimodal, speech, and video models with publicly available weights.
+> Canonical model-family repositories with useful code, recipes, evaluation tools, or engineering context. This is not a complete model leaderboard; use Hugging Face and model hubs for up-to-date weight discovery.
 
-#### Large Language Models (Base + Chat)
+#### Language Model Families
 
-- [RWKV-7 "Goose" (BlinkDL)](https://github.com/BlinkDL/RWKV-LM) - Novel RNN architecture with transformer-level LLM performance. 100% attention-free, linear-time, constant-space (no kv-cache), infinite ctx_len. Linux Foundation AI project with runtime already deployed in Windows & Office. ![GitHub stars](https://img.shields.io/github/stars/BlinkDL/RWKV-LM?style=social)
-- [Qwen3 (Alibaba)](https://github.com/QwenLM/Qwen3) - Flagship dense and MoE models with hybrid thinking modes (32B/235B). Apache 2.0 licensed with 128K context and superior agentic capabilities. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3?style=social)
-- [Qwen3.6 (Alibaba)](https://github.com/QwenLM/Qwen3.6) - Latest flagship series released April 2026 with 1M context window, agentic coding performance competitive with Claude 4.5 Opus, and enhanced multimodal capabilities. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3.6?style=social)
-- [MiniCPM (OpenBMB)](https://github.com/OpenBMB/MiniCPM) - Lightweight, high-quality language model family with compact checkpoints designed for on-device and cost-sensitive deployments. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM?style=social)
+- [RWKV](https://github.com/BlinkDL/RWKV-LM) - Attention-free language model architecture with linear-time inference, training code, inference examples, and an active open-source ecosystem. ![GitHub stars](https://img.shields.io/github/stars/BlinkDL/RWKV-LM?style=social)
+- [Qwen](https://github.com/QwenLM/Qwen3) - Canonical open model family from Alibaba with model cards, inference examples, fine-tuning guidance, and ecosystem links. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3?style=social)
+- [MiniCPM](https://github.com/OpenBMB/MiniCPM) - Compact open model family with practical code, deployment notes, and active edge/on-device focus. ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM?style=social)
+- [OLMo](https://github.com/allenai/OLMo) - Fully open language model family from Ai2 with transparent training code, data references, checkpoints, and evaluation materials. ![GitHub stars](https://img.shields.io/github/stars/allenai/OLMo?style=social)
+- [Llama Models](https://github.com/meta-llama/llama-models) - Meta's canonical repository for Llama model documentation, examples, safety materials, and integration guidance. ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-models?style=social)
+- [GPT-OSS](https://github.com/openai/gpt-oss) - OpenAI open-weight model repository with inference examples, recipes, and deployment guidance. ![GitHub stars](https://img.shields.io/github/stars/openai/gpt-oss?style=social)
+- [DeepSeek-Coder](https://github.com/deepseek-ai/DeepSeek-Coder) - Open coding-model family with model releases, evaluation details, and examples for code generation and agentic coding workflows. ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Coder?style=social)
+- [Mamba](https://github.com/state-spaces/mamba) - State Space Model implementation with pretrained checkpoints, architecture code, and research tooling for efficient long-sequence modeling. ![GitHub stars](https://img.shields.io/github/stars/state-spaces/mamba?style=social)
+- [Pythia](https://github.com/EleutherAI/pythia) - Interpretability-focused language model suite with public checkpoints, training details, and tools for studying model behavior. ![GitHub stars](https://img.shields.io/github/stars/EleutherAI/pythia?style=social)
+- [GPT-NeoX](https://github.com/EleutherAI/gpt-neox) - Large-scale language model training codebase from EleutherAI with distributed training support and historical open-model importance. ![GitHub stars](https://img.shields.io/github/stars/EleutherAI/gpt-neox?style=social)
 
-- [MiMo-V2-Flash (Xiaomi)](https://github.com/XiaomiMiMo/MiMo-V2-Flash) - 309B MoE model (15B active) with hybrid attention and Multi-Token Prediction for efficient high-speed reasoning. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/XiaomiMiMo/MiMo-V2-Flash?style=social)
-- [Nemotron (NVIDIA)](https://github.com/NVIDIA-NeMo/Nemotron) - Open and efficient models for agentic AI with training recipes, deployment guides, and use-case examples. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/NVIDIA-NeMo/Nemotron?style=social)
-- [Gemma 4 (Google)](https://github.com/google-deepmind/gemma) - Released April 2026 in four sizes (E2B, E4B, 26B MoE, 31B Dense). First major update in a year with Apache 2.0 license, complex logic, and agentic workflows. ![GitHub stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=social)
-- [Kimi K2 (Moonshot AI)](https://github.com/MoonshotAI/Kimi-K2) - State-of-the-art 1T parameter MoE model with 32B activated parameters and 128K context. Trained with Muon optimizer for exceptional reasoning and coding performance. ![GitHub stars](https://img.shields.io/github/stars/MoonshotAI/Kimi-K2?style=social)
-- [Kimi K2.5 (Moonshot AI)](https://github.com/MoonshotAI/Kimi-K2.5) - Frontier open-weight MoE model with 256K context, strong coding and reasoning performance, and native multimodal + tool-use support for agentic workflows. ![GitHub stars](https://img.shields.io/github/stars/MoonshotAI/Kimi-K2.5?style=social)
-- [Phi-4 (Microsoft)](https://github.com/microsoft/PhiCookBook) - Small but highly capable models optimized for reasoning, edge devices, and on-device inference. Includes Phi-4-reasoning variants with thinking capabilities. ![GitHub stars](https://img.shields.io/github/stars/microsoft/PhiCookBook?style=social)
-- [GLM-5 (Zhipu AI)](https://github.com/zai-org/GLM-5) - Strong open model line with solid coding, reasoning, and agentic-task performance. ![GitHub stars](https://img.shields.io/github/stars/zai-org/GLM-5?style=social)
-- [Llama 4 (Meta)](https://github.com/meta-llama/llama-models) - First native multimodal MoE open-source models (Scout: 10M context, Maverick: 400B+ params). Released April 2025 with enterprise-grade capabilities. ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama-models?style=social)
-- [GPT-OSS (OpenAI)](https://github.com/openai/gpt-oss) - OpenAI's first open-weight models since GPT-2 (120B and 20B MoE). Apache 2.0 licensed with state-of-the-art performance for their size class. Released August 2025. ![GitHub stars](https://img.shields.io/github/stars/openai/gpt-oss?style=social)
-- [Mamba (State Space Models)](https://github.com/state-spaces/mamba) - Novel State Space Model architecture with linear-time inference and transformer-level performance. 100% attention-free with constant memory usage, enabling efficient long-sequence modeling. Pretrained models from 130M to 2.8B parameters trained on 300B-600B tokens. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/state-spaces/mamba?style=social)
-- [T5 (Google)](https://github.com/google-research/text-to-text-transfer-transformer) - Text-to-Text Transfer Transformer that unified NLP tasks under a single encoder-decoder architecture. The foundation for Flan-T5 and many downstream applications. One of the first OSI-validated fully open-source language models with training data and code. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/google-research/text-to-text-transfer-transformer?style=social)
-- [GPT-NeoX-20B (EleutherAI)](https://github.com/EleutherAI/gpt-neox) - 20B parameter autoregressive language model trained on the Pile dataset. One of the largest dense open-source models with publicly available weights at release. Complete training codebase with distributed training support. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/EleutherAI/gpt-neox?style=social)
+#### Multimodal & Vision-Language Codebases
 
-#### Coding & Reasoning Models
+- [OpenCLIP](https://github.com/mlfoundations/open_clip) - Open implementation of CLIP with training code, pretrained models, and zero-shot evaluation tooling. ![GitHub stars](https://img.shields.io/github/stars/mlfoundations/open_clip?style=social)
+- [OmniParser](https://github.com/microsoft/OmniParser) - Vision-based GUI parsing model and tooling for computer-use agents. ![GitHub stars](https://img.shields.io/github/stars/microsoft/OmniParser?style=social)
+- [MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V) - Compact vision-language model family with edge-focused deployment examples and strong OCR-oriented use cases. ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V?style=social)
+- [Eagle](https://github.com/NVlabs/Eagle) - NVIDIA multimodal model codebase with open checkpoints and reusable research materials for vision-language and video-language tasks. ![GitHub stars](https://img.shields.io/github/stars/NVlabs/Eagle?style=social)
+- [Moondream](https://github.com/m87-labs/moondream) - Small vision-language model with practical inference examples for edge and real-time image understanding. ![GitHub stars](https://img.shields.io/github/stars/m87-labs/moondream?style=social)
+- [VILA](https://github.com/NVlabs/VILA) - NVIDIA vision-language model family with training, evaluation, and deployment materials across edge and datacenter settings. ![GitHub stars](https://img.shields.io/github/stars/NVlabs/VILA?style=social)
+- [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) - Monocular depth-estimation foundation model with practical inference code and broad computer-vision reuse. ![GitHub stars](https://img.shields.io/github/stars/DepthAnything/Depth-Anything-V2?style=social)
 
-- [Qwen3-Coder-Next (Alibaba)](https://github.com/QwenLM/Qwen3-Coder) - Leading open coding model. Strong Pareto frontier for cost-effective agent deployment. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3-Coder?style=social)
+#### Speech & Audio Model Codebases
 
-#### Multimodal Models (Vision + Language)
-
-- [OmniParser (Microsoft)](https://github.com/microsoft/OmniParser) - Pure vision-based GUI agent framework that parses screen elements for AI automation. V2 achieves state-of-the-art on Screen Spot Pro benchmark. Powers computer-use agents with any vision model. CC-BY-4.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/microsoft/OmniParser?style=social)
-
-- [MMaDA (Gen-Verse)](https://github.com/Gen-Verse/MMaDA) - Open-sourced multimodal large diffusion language model with unified architecture for text, image generation and multimodal reasoning. MIT licensed, NeurIPS 2025. ![GitHub stars](https://img.shields.io/github/stars/Gen-Verse/MMaDA?style=social)
-- [Qwen3-VL (Alibaba)](https://github.com/QwenLM/Qwen3-VL) - Latest flagship VLM with native 256K context (expandable to 1M), visual agent capabilities, 3D grounding, and superior multimodal reasoning. Major leap over Qwen2.5-VL. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3-VL?style=social)
-- [GLM-4.5V / GLM-4.1V-Thinking (Zhipu AI)](https://github.com/zai-org/GLM-V) - Strong multimodal reasoning with scalable reinforcement learning. Compares favorably with Gemini-2.5-Flash on benchmarks. ![GitHub stars](https://img.shields.io/github/stars/zai-org/GLM-V?style=social)
-- [MiniCPM-o 2.6](https://github.com/OpenBMB/MiniCPM-o) - Gemini 2.5 Flash level MLLM for vision, speech, and full-duplex multimodal live streaming on your phone. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM-o?style=social)
-- [Magma (Microsoft)](https://github.com/microsoft/Magma) - Foundation model for multimodal AI agents that perceives the world and takes goal-driven actions across digital and physical environments. CVPR 2025. ![GitHub stars](https://img.shields.io/github/stars/microsoft/Magma?style=social)
-- [OpenCLIP](https://github.com/mlfoundations/open_clip) - Open source implementation of CLIP with trained models and training code. Includes state-of-the-art trained ViT-G/14 models and comprehensive zero-shot evaluation suite. ![GitHub stars](https://img.shields.io/github/stars/mlfoundations/open_clip?style=social)
-- [Eagle (NVIDIA)](https://github.com/NVlabs/Eagle) - High-performance multimodal foundation model with data-centric training techniques and open checkpoints for vision-language and video-language research. ![GitHub stars](https://img.shields.io/github/stars/NVlabs/Eagle?style=social)
-- [Show-o](https://github.com/showlab/Show-o) - Unified multimodal model for both multimodal understanding and text-to-image generation with transformative autoregressive modeling. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/showlab/Show-o?style=social)
-- [Moondream (m87-labs)](https://github.com/m87-labs/moondream) - Tiny vision language model (0.5B and 2B parameters) that runs anywhere. Powerful image understanding with remarkably small footprint for edge devices and real-time applications. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/m87-labs/moondream?style=social)
-- [VILA (NVIDIA)](https://github.com/NVlabs/VILA) - Family of state-of-the-art vision language models for diverse multimodal AI tasks across edge, data center, and cloud. Features NVILA 8B/15B with efficient training and deployment. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/NVlabs/VILA?style=social)
-- [OmniGen (VectorSpaceLab)](https://github.com/VectorSpaceLab/OmniGen) - Unified image generation model that handles text-to-image, subject-driven generation, identity-preserving generation, and image editing from multi-modal prompts without additional plugins. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/VectorSpaceLab/OmniGen?style=social)
-- [Skywork-R1V (Skywork AI)](https://github.com/SkyworkAI/Skywork-R1V) - Advanced multimodal reasoning model specializing in vision-language tasks with chain-of-thought capabilities. State-of-the-art open multimodal reasoning with 76.0 on MMMU benchmark. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/SkyworkAI/Skywork-R1V?style=social)
-- [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) - Foundation model for monocular depth estimation trained on 595K synthetic and 62M+ real images. Provides robust, fine-grained depth estimation for any image. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/DepthAnything/Depth-Anything-V2?style=social)
-- [OmniSVG](https://github.com/OmniSVG/OmniSVG) - First family of end-to-end multimodal SVG generators leveraging pre-trained Vision-Language Models. Capable of generating complex SVGs from simple icons to intricate anime characters. NeurIPS 2025. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/OmniSVG/OmniSVG?style=social)
-
-#### Speech & Audio Models (TTS, STT, Music)
-
-- [NVIDIA NeMo Speech](https://github.com/NVIDIA-NeMo/NeMo) - Scalable generative AI framework for Speech AI including ASR, TTS, and speech LLMs. Includes state-of-the-art Canary and Parakeet models with 25+ European language support. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/NVIDIA-NeMo/NeMo?style=social)
-- [FunASR](https://github.com/modelscope/FunASR) - Fundamental end-to-end speech recognition toolkit with SOTA pretrained models. Supports ASR, VAD, speaker verification, diarization, and multi-talker ASR. Industrial-grade with 31-language support and real-time transcription services. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/modelscope/FunASR?style=social)
-- [Whisper (OpenAI → community forks)](https://github.com/openai/whisper) - The gold-standard open speech-to-text model. Massive community fine-tunes available. ![GitHub stars](https://img.shields.io/github/stars/openai/whisper?style=social)
-- [Sherpa-ONNX](https://github.com/k2-fsa/sherpa-onnx) - Complete speech toolkit with ASR, TTS, diarization, source separation, and VAD across embedded and edge environments via ONNX Runtime. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/k2-fsa/sherpa-onnx?style=social)
-- [OuteTTS / CosyVoice 2](https://github.com/edwko/OuteTTS) - High-quality open TTS with natural prosody and multilingual support. ![GitHub stars](https://img.shields.io/github/stars/edwko/OuteTTS?style=social)
-- [Fish Speech / StyleTTS 2](https://github.com/fishaudio/fish-speech) - Zero-shot TTS with excellent voice cloning. Extremely popular in 2026. ![GitHub stars](https://img.shields.io/github/stars/fishaudio/fish-speech?style=social)
-- [MusicGen / AudioCraft (Meta)](https://github.com/facebookresearch/audiocraft) - Open music and audio generation models. ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/audiocraft?style=social)
-- [VibeVoice (Microsoft)](https://github.com/microsoft/VibeVoice) - Open-source frontier voice AI with expressive, longform conversational speech synthesis. 7B parameter TTS with streaming support. ![GitHub stars](https://img.shields.io/github/stars/microsoft/VibeVoice?style=social)
-- [MOSS-TTS (OpenMOSS)](https://github.com/OpenMOSS/MOSS-TTS) - Open-source speech and sound generation family focused on high-fidelity, expressive, and long-form text-to-speech with streaming and multi-speaker support. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/OpenMOSS/MOSS-TTS?style=social)
-- [Qwen3-TTS (Alibaba)](https://github.com/QwenLM/Qwen3-TTS) - Open TTS series supporting stable, expressive, and streaming speech generation with free-form voice design and vivid voice cloning. Natural language instruction-driven control over timbre, emotion, and prosody. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3-TTS?style=social)
-- [Chatterbox (Resemble AI)](https://github.com/resemble-ai/chatterbox) - State-of-the-art open TTS family with 350M parameter Turbo variant. Single-step generation with native paralinguistic tags for realistic dialogue. ![GitHub stars](https://img.shields.io/github/stars/resemble-ai/chatterbox?style=social)
-- [Ultravox (Fixie AI)](https://github.com/fixie-ai/ultravox) - Fast multimodal LLM for real-time voice. Production-grade speech-to-text with streaming audio input and low-latency response for conversational AI applications. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/fixie-ai/ultravox?style=social)
-- [WhisperSpeech](https://github.com/WhisperSpeech/WhisperSpeech) - Open source text-to-speech system built by inverting Whisper. High-quality voice cloning with zero-shot capabilities. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/WhisperSpeech/WhisperSpeech?style=social)
-- [VoxCPM](https://github.com/OpenBMB/VoxCPM) - Tokenizer-free diffusion autoregressive TTS with 2B parameters. Supports 30+ languages with automatic detection, creative voice design from text descriptions, and high-fidelity voice cloning. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/VoxCPM?style=social)
-- [F5-TTS](https://github.com/SWivid/F5-TTS) - Flow matching-based TTS with fluent and faithful speech synthesis. Zero-shot voice cloning with high naturalness and prosody accuracy. MIT licensed. ![GitHub stars](https://img.shields.io/github/stars/SWivid/F5-TTS?style=social)
-- [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) - Multi-lingual large voice generation model with full-stack inference, training and deployment capabilities. Supports cross-lingual voice cloning and emotional expression control. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/FunAudioLLM/CosyVoice?style=social)
-- [ChatTTS](https://github.com/2noise/ChatTTS) - Generative speech model optimized for daily dialogue. Natural, expressive conversational speech synthesis with fine-grained prosody control. AGPL-3.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/2noise/ChatTTS?style=social)
-- [SpeechBrain](https://github.com/speechbrain/speechbrain) - PyTorch-based speech toolkit for ASR, TTS, speaker recognition, and speech enhancement. Modular, extensible framework with state-of-the-art recipes. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/speechbrain/speechbrain?style=social)
-
-#### Video & Animation Models
-
-- [Open-Sora (HPC-AI Tech)](https://github.com/hpcaitech/Open-Sora) - Democratizing efficient video production for all. Complete open-source video generation system with 11B model achieving commercial-level quality. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/hpcaitech/Open-Sora?style=social)
-
-#### Image Generation Models
-
-- [Stable Diffusion XL](https://github.com/Stability-AI/generative-models) - Next-generation image generation model with significantly improved quality, 1024px native resolution, and better prompt adherence. Foundation for SDXL-based video models. CreativeML Open RAIL++-M licensed. ![GitHub stars](https://img.shields.io/github/stars/Stability-AI/generative-models?style=social)
-
-#### Additional Vision-Language Models
-
-- [MiniCPM-V (OpenBMB)](https://github.com/OpenBMB/MiniCPM-V) - GPT-4V level multimodal LLM for single image, multi-image and high-FPS video understanding on edge devices. 8B parameters with superior OCR and reasoning capabilities. Apache 2.0 licensed. ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V?style=social)
+- [Whisper](https://github.com/openai/whisper) - Canonical open speech-to-text model codebase with widespread ecosystem support and many downstream implementations. ![GitHub stars](https://img.shields.io/github/stars/openai/whisper?style=social)
+- [FunASR](https://github.com/modelscope/FunASR) - Speech recognition toolkit with pretrained models, streaming support, diarization, VAD, and production-oriented examples. ![GitHub stars](https://img.shields.io/github/stars/modelscope/FunASR?style=social)
+- [NVIDIA NeMo](https://github.com/NVIDIA-NeMo/NeMo) - Scalable framework and model codebase for speech, language, and multimodal AI with recipes and deployment guidance. ![GitHub stars](https://img.shields.io/github/stars/NVIDIA-NeMo/NeMo?style=social)
+- [Sherpa-ONNX](https://github.com/k2-fsa/sherpa-onnx) - Complete speech toolkit with ASR, TTS, diarization, source separation, and VAD across embedded and edge environments via ONNX Runtime. ![GitHub stars](https://img.shields.io/github/stars/k2-fsa/sherpa-onnx?style=social)
+- [MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS) - Open speech and sound generation family focused on expressive, long-form text-to-speech with streaming and multi-speaker support. ![GitHub stars](https://img.shields.io/github/stars/OpenMOSS/MOSS-TTS?style=social)
+- [faster-whisper](https://github.com/SYSTRAN/faster-whisper) - CTranslate2 implementation of Whisper for faster batched and quantized inference. ![GitHub stars](https://img.shields.io/github/stars/SYSTRAN/faster-whisper?style=social)
+- [SpeechBrain](https://github.com/speechbrain/speechbrain) - PyTorch speech toolkit with recipes for ASR, TTS, speaker recognition, and speech enhancement. ![GitHub stars](https://img.shields.io/github/stars/speechbrain/speechbrain?style=social)
 
 ---
 
